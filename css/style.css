@@ -38,6 +38,10 @@ html {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background: #fafafa;
@@ -53,6 +57,30 @@ body {
 
 html {
   height: 100%;
+}
+
+.card {
+  transition: .4s;
+}
+.card:hover {
+  /* transform: scale(.98); */
+  transform: scale(1.09);
+}
+
+.card:hover .service {
+  box-shadow: 1px 1px 10px 1px lightgray;
+}
+
+.row .fa.fa-graduation-cap,
+.row .fa.fa-suitcase {
+  /* transition: 1s; */
+  transition: 2s;
+}
+.row .fa.fa-graduation-cap:hover,
+.row .fa.fa-suitcase:hover {
+  /* color: white !important; */
+  /* transform: rotate(360deg); */
+  transform: rotate(720deg);
 }
 
 /* Typography */
@@ -775,8 +803,36 @@ ul.timeline {
 
 /*------------------------ 6 Portfolio Section ------------------------*/
 
+#portfolio .cbp-item:hover img {
+  /* padding: 40px; */
+  /* filter: opacity(10px); */
+  filter: blur(3px);
+  /* transform: scale(1.02); */
+}
+#portfolio .cbp-item .btn {
+  position: relative;
+}
+#portfolio .cbp-item:hover .btn button {
+  display: inline-flex;
+}
+#portfolio .cbp-item .btn button {
+  display: none;
+}
+#portfolio .cbp-item .btn button:nth-child(1) {
+  background-color: #1769ff;
+}
+#portfolio .cbp-item .btn button {
+  background-color: red;
+  padding: 5px 10px;
+  color: white;
+  border: 0;
+  position: inherit;
+  top: -250px;
+  right: -300px;
+}
 #portfolio .cbp-item {
   padding: 15px !important;
+  transition: 4s;
 }
 
 #portfolio section {
