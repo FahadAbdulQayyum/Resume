@@ -1,5 +1,6 @@
 // read function starts here
 $(document).ready(function () {
+    // On click at the element containing class of 'demo' and 'settings' should perform the following.
     $(document).on('click', '.demo .settings', function (e) {
         e.preventDefault();
         if ($(this).parent().attr('style') === 'left: 0px;') {
