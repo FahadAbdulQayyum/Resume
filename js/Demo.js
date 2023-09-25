@@ -2,6 +2,7 @@
 $(document).ready(function () {
     // On click at the element containing class of 'demo' and 'settings' should perform the following.
     $(document).on('click', '.demo .settings', function (e) {
+        // e.preventDefault stops reloading over pressing the button while filling the form
         e.preventDefault();
         if ($(this).parent().attr('style') === 'left: 0px;') {
             $(this).parent().animate({ 'left': '-200px' });
