@@ -1,3 +1,4 @@
+// read function starts here
 $(document).ready(function () {
     $(document).on('click', '.demo .settings', function (e) {
         e.preventDefault();
