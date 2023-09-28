@@ -1,3 +1,8 @@
+function dataLayer() {
+    dataLayer.push({name:"Fahoodi's Img"})
+}
+
+
 $(document).ready(function () {
 
     // PRELOADER
