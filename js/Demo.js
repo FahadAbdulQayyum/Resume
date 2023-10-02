@@ -22,6 +22,7 @@ $(document).ready(function () {
     }
     // Then document once clicked then target the elements having the 'demo' and 'color' named class should do the following in the function
     $(document).on('click', '.demo .color',function (e) {
+       // This is used for not letting reload in case of button pressed for filling the form
         e.preventDefault();
         $.cookie('color', $(this).data('color'), { expires: 7, path: '/' });
         $('#color').attr('href', 'css/colors/' + $(this).data('color'));
