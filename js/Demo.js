@@ -4,6 +4,7 @@ $(document).ready(function () {
     $(document).on('click', '.demo .settings', function (e) {
         // e.preventDefault stops reloading over pressing the button while filling the form
         e.preventDefault();
+        // If the specific element has a parent with attribute style then add 'left: 0px;'
         if ($(this).parent().attr('style') === 'left: 0px;') {
             $(this).parent().animate({ 'left': '-200px' });
         }
