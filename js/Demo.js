@@ -15,9 +15,7 @@ $(document).ready(function () {
         }
     });
 
-    // If the Cookie has color
     if ($.cookie('color')) {
-        // Then any element has the id of 'color' will have an attribute of href then increment the cookie's color by specifying the address
         $('#color').attr('href', 'css/colors/' + $.cookie('color'));
     }
     // Then document once clicked then target the elements having the 'demo' and 'color' named class should do the following in the function
