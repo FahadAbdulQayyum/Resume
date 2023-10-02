@@ -15,6 +15,7 @@ $(document).ready(function () {
         }
     });
 
+    // If the Cookie has color
     if ($.cookie('color')) {
         $('#color').attr('href', 'css/colors/' + $.cookie('color'));
     }
