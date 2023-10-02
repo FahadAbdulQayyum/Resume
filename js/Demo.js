@@ -10,6 +10,7 @@ $(document).ready(function () {
             $(this).parent().animate({ 'left': '-200px' });
         }
         else {
+            // Otherwise, the same parent element should not animate
             $(this).parent().animate({ 'left': '0' });
         }
     });
