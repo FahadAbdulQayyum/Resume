@@ -6,6 +6,7 @@ $(document).ready(function () {
         e.preventDefault();
         // If the specific element has a parent with attribute style then add 'left: 0px;'
         if ($(this).parent().attr('style') === 'left: 0px;') {
+            // The same parent will animate by going right by '200px'
             $(this).parent().animate({ 'left': '-200px' });
         }
         else {
