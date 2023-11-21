@@ -721,6 +721,7 @@ ul.timeline {
   display: block;
   position: absolute;
   margin-top: -1px;
+  margin-top: 3px;
 }
 
 .timeline li .line-title {
